@@ -1,0 +1,19 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["hi", "hello", "hey", "good morning", "good evening"],
+            "responses": ["Hello! How can I help you today?", "Hi there! What can I do for you?"]
+        },
+        {
+            "tag": "how_are_you",
+            "patterns": ["how are you", "how's it going", "how are you doing"],
+            "responses": ["I'm just a bot, but I'm doing well. How about you?", "I'm good, thanks! How can I assist you?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["bye", "goodbye", "see you later", "see you"],
+            "responses": ["Goodbye! Have a great day!", "Bye! See you next time!"]
+        }
+    ]
+}
