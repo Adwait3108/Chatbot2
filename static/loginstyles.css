@@ -1,0 +1,115 @@
+/* Container Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #000;
+  }
+  
+  /* Left Side - Gradient Background */
+  .left-side {
+    flex: 1;
+    background: linear-gradient(to bottom right, #6b46c1, #553c9a, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .login-info {
+    text-align: center;
+    color: white;
+  }
+  
+  .login-info h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .login-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-info p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Right Side - Form */
+  .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .form-container {
+    background-color: black;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-container h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form-container p {
+    color: #a0aec0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group input {
+    background-color: #2d3748;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  
+  .password-info {
+    color: #a0aec0;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+  }
+  
+  .forgot-password {
+    color: white;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  button {
+    background-color: white;
+    color: black;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #e2e8f0;
+  }
+  
+  /* Bottom link */
+  .form-container p a {
+    color: white;
+    text-decoration: underline;
+  }
+  

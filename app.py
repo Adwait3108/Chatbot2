@@ -41,6 +41,11 @@ def save_email(email):
     with open('contact.txt', 'a') as f:
         f.write(f'{email}\n')
 
+# New route for the root URL
+@app.route('/')
+def home():
+    return redirect(url_for('login'))
+
 # Route for the login page
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -79,6 +84,8 @@ def signup():
 # Route for the chatbot
 @app.route('/chatbot')
 def chatbot():
+    if 'username' not in session:
+        return redirect(url_for('login'))
     session['conversation'] = []  # Initialize conversation history
     return render_template('index.html')
 
